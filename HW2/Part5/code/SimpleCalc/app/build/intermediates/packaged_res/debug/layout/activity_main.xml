@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="260dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="center_vertical"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/secondField"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:hint="Second Number"
+        android:textAlignment="viewStart"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <EditText
+        android:id="@+id/firstField"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:hint="First Number"
+        android:textAlignment="viewStart"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="166dp"
+        android:text="Calculate"
+        app:cornerRadius="1sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radioPlus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondField"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="131dp"
+        android:layout_height="266dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalc"
+        app:layout_constraintTop_toBottomOf="@+id/secondField">
+
+        <RadioButton
+            android:id="@+id/radioPlus"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
+            android:text="+"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/radioMinus"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
+            android:text="-"
+            android:textSize="35sp" />
+
+        <RadioButton
+            android:id="@+id/radioTimes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
+            android:text="*"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioDiv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
+            android:text="/"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/radioMod"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="0dp"
+            android:text="%"
+            android:textSize="22sp" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
